@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.menu nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu nav ul li:hover {
+    cursor: pointer;
+    color: aqua;
+}
+
+.menu nav {
+    width: 100%;
+    padding: 10px;
+    background-color: #212529;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.searching input {
+    padding: 8px;
+}
+
+.search {
+    color: white;
+    background: linear-gradient(transparent, rgb(73, 67, 67));
+    width: 125px;
+    padding: 8px;
+    margin: 12px;
+    position: relative;
+    box-shadow: 0px 0px 3px 0px white;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.search::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(120deg, transparent, #00ffff9c, transparent);
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in;
+}
+
+.search:hover::before {
+    transform: translateX(100%);
+}
+
+.search:hover {
+    background: linear-gradient(120deg, transparent, #00ffff9c, transparent);
+    box-shadow: 0px 0px 20px 3px aqua;
+    border: 2px solid aqua;
+    border-radius: 6px;
+}
+
+.Home {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url('https://r.mobirisesite.com/514436/assets/images/photo-1517694712202-14dd9538aa97.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.intro-content {
+    text-align: center;
+    color: white;
+    z-index: 1;
+    position: relative;
+}
+
+.intro-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.intro-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.intro-content button {
+    border: 2px solid white;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.intro-content button:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+.intro-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.intro-content a:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+.What-to-Know {
+    min-height: 100vh; /* Ensuring the section has a minimum height */
+    width: 100vw;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(transparent, pink, rgb(223, 220, 214));
+    background-attachment: fixed;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.know-contents {
+    text-align: center;
+    width: 100%;
+}
+
+.know-contents h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.known-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 238, 238);
+    border: 1px solid #ccc;
+    padding: 12px;
+    color: rgb(53, 47, 47);
+    border-radius: 10px;
+    margin-bottom: 20px; /* Add margin to prevent cutoff */
+}
+
+.cards h4 {
+    margin: 5%;
+}
+
+.ShowCase {
+    height: 80vh;
+    background: linear-gradient(rgb(223, 214, 214), rgb(212, 183, 183));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.show {
+    position: relative;
+    width: 100%;
+}
+
+.show h1 {
+    padding: 24px;
+    text-align: center;
+}
+
+.showimages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+    position: relative;
+    overflow: hidden;
+    height: 300px; /* Match the height of the images */
+}
+
+.showimages img {
+    width: 300px;
+    height: 300px;
+    border-radius: 16px;
+    position: relative;
+    transition: transform 0.3s ease-out;
+}
+
+.LinkedInConnect {
+    background: linear-gradient(white, rgb(247, 217, 222));
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.connect h1 {
+    font-size: 52px;
+}
+
+.b {
+    color: white;
+    background: rgb(71, 190, 236);
+    width: 234px;
+    padding: 22px;
+    margin: 5% auto;
+    display: block;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0px 0px 3px 0px white;
+    overflow: hidden;
+    text-align: center;
+}
+
+.b::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(120deg, transparent, #00ffff9c, transparent);
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in;
+}
+
+.b:hover::before {
+    transform: translateX(100%);
+}
+
+.b:hover {
+    background: black;
+    box-shadow: 0px 0px 20px 3px aqua;
+    border: 2px solid aqua;
+    border-radius: 6px;
+}
+
+.connect button a {
+    text-decoration: none;
+    color: white; /* Ensure the link text is visible on the button */
+}
+
+.help {
+    background: linear-gradient(rgb(246, 201, 209), rgb(252, 96, 122));
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .menu nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .searching {
+        margin-top: 10px;
+    }
+
+    .intro-content h1 {
+        font-size: 2rem;
+    }
+
+    .intro-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .intro-content button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .know-contents h1 {
+        font-size: 2rem;
+    }
+
+    .showimages {
+        /* flex-wrap: wrap; */
+        height: auto;
+        gap: 20px;
+    }
+
+    .showimages img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .LinkedInConnect h1 {
+        font-size: 2rem;
+    }
+
+    .b {
+        width: 100%;
+        max-width: 300px;
+        padding: 15px;
+    }
+
+    .help {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .intro-content h3 {
+        font-size: 1rem;
+    }
+
+    .intro-content button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .know-contents h1 {
+        font-size: 1.5rem;
+    }
+
+    .cards {
+        min-width: 150px;
+        min-height: 150px;
+    }
+
+    .show h1 {
+        font-size: 1.5rem;
+        padding: 12px;
+    }
+
+    .LinkedInConnect h1 {
+        font-size: 1.5rem;
+    }
+
+    .b {
+        width: 100%;
+        max-width: 200px;
+        padding: 10px;
+    }
+
+    .help {
+        font-size: 1rem;
+    }
+}

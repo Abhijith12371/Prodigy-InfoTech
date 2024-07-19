@@ -1,0 +1,86 @@
+
+
+body{
+    background-color: black;
+    color: white;
+}
+.whetherContainer {
+    padding: 34px;
+    background-color: rgb(0, 149, 255);
+    /* opacity: 80%; */
+    /* background: transparent; */
+    height: auto;
+    width: 196px;
+    border-radius: 8px;
+    margin: 10vh auto;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    flex-direction: column;
+    
+}
+.searchbox{
+    display: flex;
+    margin: auto;
+}
+.searchbox input{
+    border-radius: 6px;
+    border: none;
+    /* width: 33vw; */
+    padding: 10px;
+}
+.searchicon img{
+    border: 2px solid white;
+    width: 24px;
+    border-radius: 69px;
+    padding: 4.4px;
+    background-color: white;
+    cursor: pointer;
+
+}
+.maincontent{
+    gap: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whetherIcon img{
+    width:100px;
+    height: 100px;
+}
+
+.WhetherContents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 34px;
+}
+
+.WFcontents{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.WFcontents img{
+    width: 50px;
+    height: 50px;
+}
+
+/* .whetherContainer:hover{
+    background-color: rgba(50, 50, 255, 0.5);
+    transition: background-color 2s ease-in-out;
+} */
+
+/* CSS for responsiveness */
+@media only screen and (max-width: 600px) {
+    .whetherContainer{
+        width: auto;
+        height: auto;
+    }
+}
+

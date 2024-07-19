@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MainWebsite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="menu">
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#What-to-Know">About</a></li>
+                <li><a href="#LinkedInConnect">ContactUs</a></li>
+                <li><a href="#help">Help</a></li>
+            </ul>
+            <div class="searching">
+                <input type="text" placeholder="search">
+                <button class="search">search</button>
+            </div>
+        </nav>
+    </section>
+    <section class="Home" id="Home">
+        <div class="intro-content">
+            <h1>Code With Abhijith</h1>
+            <h3>Embark on a Journey of Digital Sorcery with Your Personal Coding Portfolio!</h3>
+            <button><a href="DigitalBoard.exe">Start Now</a></button>
+        </div>
+    </div>
+</section>
+<section class="What-to-Know" id="What-to-Know">
+    <div class="know-contents">
+        <h1>Curious Minds Want to Know</h1>
+        <div class="known-cards">
+            <div class="cards">
+                <h4>What Makes Your Coding Stand Out?</h4>
+                <h5>Our code is so sleek, it makes unicorns jealous. Each line is a stroke of genius, crafted with love and caffeine.</h5>
+            </div>
+            <div class="cards">
+                <h4>How Can I Join the Magic?</h4>
+                <h5>Simply wave your keyboard like a wand and say 'Abracadabra!' Just kidding, click the 'Get Hired' button and let the enchantment begin!</h5>
+            </div>
+            <div class="cards">
+                <h4>Why Choose CodeStream?</h4>
+                <h5>Because we turn bugs into butterflies and errors into magic spells. Your digital dreams are our reality.</h5>
+            </div>
+            <div class="cards">
+                <h4>Can I Really Make Magic Here?</h4>
+                <h5>Absolutely! With our spells of creativity and potions of innovation, you'll be conjuring digital wonders in no time!</h5>
+            </div>
+            <div class="cards">
+                <h4>Is Coding Your Superpower?</h4>
+                <h5>Coding is not just our superpower, it's our entire superhero persona! Join us and become a coding wizard today!</h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ShowCase">
+    <div class="show">
+        <h1>Coding Journey Showcase</h1>
+        <div class="showimages">
+            <img src="https://r.mobirisesite.com/514436/assets/images/photo-1555099962-4199c345e5dd.jpeg" alt="">
+            <img src="https://r.mobirisesite.com/514436/assets/images/photo-1555099962-4199c345e5dd.jpeg" alt="">
+            <img src="https://r.mobirisesite.com/514436/assets/images/photo-1555949963-ff9fe0c870eb.jpeg" alt="">
+            <img src="https://r.mobirisesite.com/514436/assets/images/photo-1517694712202-14dd9538aa97.jpeg" alt="">
+            <img src="https://r.mobirisesite.com/514436/assets/images/photo-1517694712202-14dd9538aa97.jpeg" alt="">
+            <img src="https://r.mobirisesite.com/514436/assets/images/photo-1555099962-4199c345e5dd.jpeg" alt="">
+            <img src="https://r.mobirisesite.com/514436/assets/images/photo-1526374965328-7f61d4dc18c5.jpeg" alt="">
+            <img src="https://r.mobirisesite.com/514436/assets/images/photo-1517694712202-14dd9538aa97.jpeg" alt="">
+            <img src="https://r.mobirisesite.com/514436/assets/images/photo-1555099962-4199c345e5dd.jpeg" alt="">
+            <img src="https://r.mobirisesite.com/514436/assets/images/photo-1526374965328-7f61d4dc18c5.jpeg" alt="">
+            <img src="https://r.mobirisesite.com/514436/assets/images/photo-1517694712202-14dd9538aa97.jpeg" alt="">
+            <img src="https://r.mobirisesite.com/514436/assets/images/photo-1555949963-ff9fe0c870eb.jpeg" alt="">
+            <img src="https://r.mobirisesite.com/514436/assets/images/photo-1526374965328-7f61d4dc18c5.jpeg" alt="">
+            <img src="https://r.mobirisesite.com/514436/assets/images/photo-1555099962-4199c345e5dd.jpeg" alt="">
+            <img src="https://r.mobirisesite.com/514436/assets/images/photo-1526374965328-7f61d4dc18c5.jpeg" alt="">
+            <img src="https://r.mobirisesite.com/514436/assets/images/photo-1555099962-4199c345e5dd.jpeg" alt="">
+            <img src="https://r.mobirisesite.com/514436/assets/images/photo-1517694712202-14dd9538aa97.jpeg" alt="">
+            <img src="https://r.mobirisesite.com/514436/assets/images/photo-1555099962-4199c345e5dd.jpeg" alt="">
+            <img src="https://r.mobirisesite.com/514436/assets/images/photo-1555099962-4199c345e5dd.jpeg" alt="">
+        </div>
+    </div>
+</section>
+<section class="LinkedInConnect" id="LinkedInConnect">
+    <div class="connect">
+        <h1>Ready To Connect?</h1>
+        <button class="b"><a href="https://www.linkedin.com/in/n-v-s-s-abhijith-456443252" target="_blank">Connect</a></button>
+    </div>
+</section>
+
+<section class="help" id="help">
+    <h1>Still In Progress</h1>
+</section>
+<script>
+    function horizontalScrollEffect() {
+        const images = document.querySelectorAll('.showimages img');
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        images.forEach((img, idx) => {
+            const speed = 1; // Adjust speed as needed
+            img.style.transform = `translateX(${scrollTop * speed}px)`;
+        });
+    }
+    window.addEventListener('scroll', horizontalScrollEffect);
+</script>
+</body>
+
+</html>
+
